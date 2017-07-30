@@ -1,0 +1,41 @@
+{
+	"urls" : [
+		{
+			"pathPrepend" : "CSSLocation",
+			"path" : "/(?<CSSFilename>[^/]+)",
+			"handler" : "com.templatesrv.base.CSSPage"
+		},
+		{
+			"pathPrepend" : "JSLocation",
+			"path" : "/(?<JSFilename>[^/]+)",
+			"handler" : "com.templatesrv.base.JSPage"
+		},
+		{
+			"pathPrepend" : "HTMLLocation",
+			"path" : "/(?<HTMLFilename>[^/]+)",
+			"handler" : "com.templatesrv.base.HTMLPage"
+		},
+		{
+			"path" : "/(?<Filename>[^/]+)",
+			"handler" : "com.templatesrv.base.FilePage"
+		},
+		{
+			"path" : "/",
+			"handler" : "com.game.pages.Home",
+			"isHome" : "true"
+		},
+		{
+			"path" : "/404",
+			"handler" : "com.game.pages.FourOhFour",
+			"is404" : "true"
+		},
+		{
+			"path" : "/game/new",
+			"handler" : "com.game.pages.NewGame"
+		},
+		{
+			"path" : "/game/old",
+			"handler" : "com.game.pages.LoadGame"
+		}
+	]
+}
