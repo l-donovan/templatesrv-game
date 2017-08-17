@@ -16,13 +16,26 @@
 			"handler" : "com.templatesrv.base.HTMLPage"
 		},
 		{
-			"path" : "/(?<Filename>[^/]+)",
+			"path" : "/file/(?<Filename>[^/]+)",
+			"handler" : "com.templatesrv.base.FilePage"
+		},
+		{
+			// For the favicon.ico
+			"path" : "/(?<Filename>[^/]+\\.ico)",
 			"handler" : "com.templatesrv.base.FilePage"
 		},
 		{
 			"path" : "/",
 			"handler" : "com.game.pages.Home",
 			"isHome" : "true"
+		},
+		{
+			"path" : "/admin/?",
+			"handler" : "com.game.pages.admin.AdminPage"
+		},
+		{
+			"path" : "/admin/updateSettings",
+			"handler" : "com.game.pages.admin.UpdateSettings"
 		},
 		{
 			"path" : "/404",

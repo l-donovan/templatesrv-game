@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="{$ CSSLocation $}/admin.css">
+		<meta name="author" content="{$ ProjectAuthor $}">
+		<title>{$ Title $}</title>
+	</head>
+	<body>
+		<div class="card_container">
+			<h2>Global Settings</h2>
+			<hr style="width: 20%">
+			<div id="settingslist_container">	
+				<form action="/admin/updateSettings" method="post">
+					<table cellpadding="0" cellspacing="0" id="settingslist_table">
+						{$ SettingsList $}
+					</table><br>
+					<input type="submit" value="Update" id="button_update">
+				</form>
+			</div>
+		</div>
+		<div class="card_container">
+			<h2>Logs</h2>
+			<hr style="width: 20%">
+			<textarea readonly id="logs">
+				{$ LogDump $}
+			</textarea>
+		</div>
+	</body>
+</html>

@@ -1,11 +1,14 @@
 {
     "settings" : {
-        "ProjectName" : "Game",
-        "ProjectAuthor" : "Luke Donovan",
-        "URLLocation" : "res/url.json",
-        "HTMLLocation" : "/res/html",
-        "CSSLocation" : "/res/css",
-        "JSLocation" : "/res/js",
-        "FileLocation" : "/res/file"
+        "ProjectName"    : "Game",
+        "ProjectAuthor"  : "Luke Donovan",
+        "Locale"         : "en-US",
+        "Encoding"       : "utf-8",
+        "Authentication" : "true",
+        "URLLocation"    : "res/url.json",
+        "HTMLLocation"   : "/res/html",
+        "CSSLocation"    : "/res/css",
+        "JSLocation"     : "/res/js",
+        "FileLocation"   : "/res/file"
     }
 }

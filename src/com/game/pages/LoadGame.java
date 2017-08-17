@@ -9,9 +9,9 @@ import com.templatesrv.base.URLMatch;
 public class LoadGame implements Page {
 
 	@Override
-	public HTTPResponse renderResponse(TemplateServer t, HttpExchange h, URLMatch u) {
-		// TODO Auto-generated method stub
-		return null;
+	public HTTPResponse renderResponse(TemplateServer server, HttpExchange exchange, URLMatch match) {
+		HTTPResponse response = HTTPResponse.redirect("/");
+		return response;
 	}
 
 }

@@ -9,15 +9,15 @@ import com.templatesrv.utils.LogMessage;
 
 public class Main {
 	public static void main(String args[]) {
-		TemplateServer t = new TemplateServer(8000);
+		TemplateServer server = new TemplateServer(8000);
 
-		t.start();
-		t.commandLoop();
-		t.stop(Code.EXIT_OK);
+		server.start();
+		server.commandLoop();
+		server.stop(Code.EXIT_OK);
 
 		System.out.println("\nLOG DUMP");
-		ArrayList<LogMessage> l = Global.LOGGER.getLogs();
-		for (int i = 0; i < l.size(); i++)
-			System.out.println((i + 1) + ")\t" + l.get(i).getMessage());
+		ArrayList<LogMessage> logs = Global.LOGGER.getLogs();
+		for (int i = 0; i < logs.size(); i++)
+			System.out.printf("%d)\t%s\n", i + 1, logs.get(i).getMessage());
 	}
 }
